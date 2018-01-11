@@ -1,0 +1,26 @@
+魔术字符串：在代码之中多次出现、与代码形成强耦合的某一个具体的字符串或者数值。
+避免：用变量活对象替换
+
+模块的 Singleton 模式  指的是调用一个类，任何时候返回的都是同一个实例。
+
+Iterator 接口 遍历器接口，主要用于支持 for...of
+
+Generator 函数，状态机，返回一个遍历器对象
+  形式：function* helloWorldGenerator() {
+            yield 'hello';     // yield：产出
+            yield 'world';
+            return 'ending';
+        }
+        
+        var hw = helloWorldGenerator();
+
+面向对象编程：由类生成实例
+        es5：function Point(x, y) {   // 构造函数——————>原型————>实例
+                this.x = x;
+                this.y = y;
+            }
+            Point.prototype.toString = function () {   // 原型，扩展构造函数属性
+                return '(' + this.x + ', ' + this.y + ')';
+            };
+            var p = new Point(1, 2); // 实例
+   es6与java：用class生成一个类型，通过这个类型生成实例

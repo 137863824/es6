@@ -32,3 +32,10 @@ let func = eval.call(null, str);
 func('Jack') // "Hello Jack!"
 // =============================================
 // 如何通过模板字符串，生成正式模板，如何封住一个模板
+// 标签模板
+// raw()函数
+// 尾调用与尾递归
+
+// es6原型 __proto__对象等
+
+// 二进制数组，ArrayBuffer对象，TypedArray视图，DataView视图
